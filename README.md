@@ -1,3 +1,5 @@
+#Personal project to play around with OpenGL
+
 To run on MAC OSX, simply follow these steps
 
 1. Open Terminal
