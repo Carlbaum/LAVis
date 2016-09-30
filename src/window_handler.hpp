@@ -13,10 +13,20 @@ public:
     WindowHandler();
     // DESTRUCTOR
     ~WindowHandler();
+    void StartWindowLoop();
+    void Update();
+    void Clear(float r, float g, float b, float a);
+    bool IsClosed();
+    GLFWwindow* GetWindowPointer() { return m_window; }
+
 
 private:
     void InitializeWindow();
-    GLFWwindow* window;
+    bool m_isClosed;
+
+    GLFWwindow* m_window;
+
+    GLuint VertexArrayID;
 
 
 }; // end of class
